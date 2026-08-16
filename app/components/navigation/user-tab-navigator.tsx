@@ -7,7 +7,6 @@ import { IconSymbol } from '@/components/ui/icon-symbol';
 import { DynamicLeftButton } from './dynamic-left-button';
 import { BORDER_RADIUS, COLORS, SPACING } from '@/constants/theme';
 import { DynamicRightButton } from './dynamic-right-button';
-import BlurView from 'expo-blur/build/BlurView';
 
 export function UserTabNavigator() {
 

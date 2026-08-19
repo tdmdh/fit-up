@@ -7,8 +7,6 @@ import { IconSymbol } from '@/components/ui/icon-symbol';
 import { BORDER_RADIUS, COLORS, SPACING } from '@/constants/theme';
 import { DynamicLeftButton } from './dynamic-left-button';
 import { DynamicRightButton } from './dynamic-right-button';
-import { BlurView } from 'expo-blur';
-
 
 export function CoachTabNavigator() {
   return (
@@ -42,12 +40,9 @@ export function CoachTabNavigator() {
            },
            tabBarShowLabel: false,
            tabBarButton: AnimatedTabButton,
-            tabBarBackground: () => (
-              <BlurView tint="dark" intensity={80} style={StyleSheet.absoluteFill} />
-            ),
             tabBarStyle: {
             ...styles.tabBar,
-            backgroundColor: 'transparent',
+            backgroundColor: COLORS.background.card,
             borderWidth: 0,
             elevation: 0,
             },

@@ -16,7 +16,6 @@ import { MotiView } from 'moti';
 import { Ionicons } from '@expo/vector-icons';
 import { useCurrentUser } from '@/hooks/user/use-current-user';
 import { useConversation } from '@/hooks/message/use-conversation';
-import { BlurView } from "expo-blur";
 type RouteContext = 'coach' | 'user';
 
 interface DynamicButtonProps {

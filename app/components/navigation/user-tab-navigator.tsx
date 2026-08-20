@@ -7,7 +7,6 @@ import { IconSymbol } from '@/components/ui/icon-symbol';
 import { DynamicLeftButton } from './dynamic-left-button';
 import { BORDER_RADIUS, COLORS, SPACING } from '@/constants/theme';
 import { DynamicRightButton } from './dynamic-right-button';
-import BlurView from 'expo-blur/build/BlurView';
 
 export function UserTabNavigator() {
 
@@ -42,15 +41,7 @@ export function UserTabNavigator() {
            },
            tabBarShowLabel: false,
            tabBarButton: AnimatedTabButton,
-            tabBarBackground: () => (
-              <BlurView tint="dark" intensity={80} style={StyleSheet.absoluteFill} />
-            ),
-            tabBarStyle: {
-            ...styles.tabBar,
-            backgroundColor: 'transparent',
-            borderWidth: 0,
-            elevation: 0,
-            },
+           tabBarStyle: styles.tabBar,
            tabBarLabelStyle: styles.tabBarLabel,
            tabBarItemStyle: styles.tabBarItem,
          }}>
